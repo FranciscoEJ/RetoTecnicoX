@@ -1,7 +1,8 @@
 # Reto técnico
 
 ### Reto 1
-Basado en los datos del response en la peticion del endpoint dado se obtine:
+Basado en los datos del response en la peticion del endpoint dado se obtiene:
+
 2. Obtener el número de respuestas contestadas y no contestadas
 3. Obtener la respuesta con menor número de vistas
 4. Obtener la respuesta más vieja y más actual
