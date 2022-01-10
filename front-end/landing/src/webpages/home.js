@@ -6,7 +6,7 @@ const Home = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/index")
+        fetch("http://localhost:8003/index")
             .then(res => res.json())
             .then(
                 (data) => {
@@ -28,7 +28,7 @@ const Home = () => {
             <ul>
                 {users.map(user => (
                     <li>
-                        <Link to={`case/${user.number_case}`}>{user.description}</Link>
+                        <Link to={`/${user.number_case}`}>{user.description}</Link>
                     </li>
                 ))
                 }

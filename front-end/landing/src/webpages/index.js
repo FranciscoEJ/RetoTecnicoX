@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Routes,
     Link
 } from "react-router-dom";
 import Home from './home';
@@ -11,7 +12,7 @@ const Webpages = () => {
     return (
         <Router>
             <Route exact path="/" component={Home} />
-            <Route path="/case/:number_case" component={Case} />
+            <Route path="/:number_case" component={Case} />
         </Router>
     );
 };

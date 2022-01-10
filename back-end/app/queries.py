@@ -2,7 +2,7 @@
 config = {
     'user': 'root',
     'password': 'root',
-    'host': 'db',
+    'unix_socket': '/var/run/mysqld/mysqld.sock',
     'port': '3306',
     'database': 'MisVuelos'
 }

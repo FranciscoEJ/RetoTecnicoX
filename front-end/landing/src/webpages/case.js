@@ -6,7 +6,7 @@ const Case = props => {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/" + number_case)
+        fetch("http://localhost:8003/" + number_case)
             .then(res => res.json())
             .then(
                 (data) => {
