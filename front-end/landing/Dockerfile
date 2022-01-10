@@ -4,8 +4,6 @@ FROM node:14-slim
 WORKDIR /user/src/app
 # Copy the requirements file
 COPY ./package.json ./
-# Copy the lock file in order to install dependencies
-COPY ./yarn.lock ./
 # Install Node dependencies
 RUN npm install
 # Copy the rest of the codebase into the image
