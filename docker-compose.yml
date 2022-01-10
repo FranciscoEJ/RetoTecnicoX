@@ -1,13 +1,11 @@
 version: "3.7"
 services:
   flask:
-    build: ./app
+    build: ./back-end/app
     container_name: flask
     restart: always
     environment:
       - APP_NAME=RetoTecnicoX
-      - USER=root
-      - PASSWORD=root
     expose:
       - 8080
   nginx:
@@ -24,3 +22,12 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
+  react:
+    build: ./fron-end/landing
+    container_name: react
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end/landing:/user/src/app
+    depends_on:
+      - flask

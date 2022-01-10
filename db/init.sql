@@ -9,13 +9,13 @@ create table Aeropuerto (ID_AEROPUERTO integer, NOMBRE_AEROLINEA varchar(20), PR
 
 create table Aerolinea (ID_AEROLINEA integer, NOMBRE_AEROLINEA varchar(2), PRIMARY KEY (ID_AEROLINEA));
 		insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (1,"Volaris");
-        insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (2,"Aeromar");
+      insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (2,"Aeromar");
 		insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (3,"Interjet");
 		insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (4,"Aeromexico");
 
 create table Movimiento (ID_MOVIMIENTO integer, DESCRIPCION varchar(10), PRIMARY KEY (ID_MOVIMIENTO));
 		insert into Movimiento (ID_MOVIMIENTO, DESCRIPCION) values (1,"SALIDA");
-        insert into Movimiento (ID_MOVIMIENTO, DESCRIPCION) values (2,"LLEGADA");
+      insert into Movimiento (ID_MOVIMIENTO, DESCRIPCION) values (2,"LLEGADA");
 
 create table Vuelos (ID_AEROLINEA integer, ID_AEROPUERTO integer, ID_MOVIMIENTO integer, dia date,
                      FOREIGN KEY (ID_AEROLINEA) REFERENCES Aerolinea(ID_AEROLINEA),
