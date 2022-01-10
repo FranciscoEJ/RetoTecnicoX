@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    BrowserRouter,
     Switch,
     Route,
     Routes,
@@ -10,10 +10,14 @@ import Home from './home';
 import Case from './case';
 const Webpages = () => {
     return (
-        <Router>
-            <Route exact path="/" component={Home} />
-            <Route path="/:number_case" component={Case} />
-        </Router>
+        <BrowserRouter>
+            <div>
+                <Routes>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/:number_case" component={Case} />
+                </Routes>
+            </div>
+        </BrowserRouter>
     );
 };
 export default Webpages;
