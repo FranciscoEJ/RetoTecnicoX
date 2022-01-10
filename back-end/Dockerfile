@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 # Copy the rest of the codebase into the image
 COPY . .
 # Finally run uWSGI
-CMD [ “uwsgi”, “app.ini” ]
+CMD ["uwsgi","app.ini"]

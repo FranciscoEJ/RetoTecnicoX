@@ -7,7 +7,7 @@ services:
     environment:
       - APP_NAME=RetoTecnicoX
     expose:
-      - 8080
+      - 5000
   nginx:
     build: ./nginx
     container_name: nginx

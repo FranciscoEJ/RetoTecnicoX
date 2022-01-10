@@ -7,7 +7,7 @@ create table Aeropuerto (ID_AEROPUERTO integer, NOMBRE_AEROLINEA varchar(20), PR
 		insert into Aeropuerto (ID_AEROPUERTO, NOMBRE_AEROLINEA) values (3,"La paz");
 		insert into Aeropuerto (ID_AEROPUERTO, NOMBRE_AEROLINEA) values (4,"Oaxaca");
 
-create table Aerolinea (ID_AEROLINEA integer, NOMBRE_AEROLINEA varchar(2), PRIMARY KEY (ID_AEROLINEA));
+create table Aerolinea (ID_AEROLINEA integer, NOMBRE_AEROLINEA varchar(20), PRIMARY KEY (ID_AEROLINEA));
 		insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (1,"Volaris");
       insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (2,"Aeromar");
 		insert into Aerolinea (ID_AEROLINEA, NOMBRE_AEROLINEA) values (3,"Interjet");

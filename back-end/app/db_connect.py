@@ -1,7 +1,7 @@
 import mysql.connector
 
 
-def query_mysql(query) -> List[Dict]:
+def query_mysql(query):
     """
     Create a conection to a MySQL database to query information
     Args:
