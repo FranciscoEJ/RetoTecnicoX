@@ -3,5 +3,6 @@
 .DS_Store
 .DS_Store?
 ._*
+.vscode
 .Spotlight-V100
 .Trashes

@@ -8,15 +8,13 @@ Basado en los datos del response en la peticion del endpoint dado se obtiene:
 4. Obtener la respuesta más vieja y más actual
 5. Obtener la respuesta del owner que tenga una mayor reputación
 
-#### Ejecucion:
+#### Ejecucion local:
 Ejecutar en terminal con interprete python 3.9 instalado lo siguiente:
 
 `$ pipenv shell`
 `$ pipenv install`
 
-Para ejecutar programa:
 
-`$ python main.py`
 
 Para ejecutar pruebas:
 

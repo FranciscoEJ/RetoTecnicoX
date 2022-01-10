@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "*"
 requests = "*"
+mysql-connector = "*"
 
 [dev-packages]
 autopep8 = "*"
