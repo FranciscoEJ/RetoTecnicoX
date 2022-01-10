@@ -1,6 +1,7 @@
 import mysql.connector
 import json
 import logging
+from .queries import config
 
 
 def query_mysql(query):
@@ -18,7 +19,7 @@ def query_mysql(query):
         result = cursor.fetchall()
         return {json.dumps(result)}
     except Exception as e:
-        logging.error(E)
+        logging.error(e)
         return "Not able to connect or query to DB"
     finally:
         cursor.close()

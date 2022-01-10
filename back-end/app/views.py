@@ -6,7 +6,7 @@ import logging
 from flask import Flask
 from typing import List, Dict
 from .process import petition, count_answers, less_views, older_newer_answer, higer_reputation
-from .queries import config, test, diasMayVuelo, mayorAeropu, mayorAeroli, mayorDia
+from .queries import test, diasMayVuelo, mayorAeropu, mayorAeroli, mayorDia
 from .db_connect import query_mysql
 
 app = Flask(__name__)
